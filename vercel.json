@@ -1,0 +1,13 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/tools/retirement-savings-calculator.html"
+    },
+    {
+      "source": "/tools",
+      "destination": "/tools/retirement-savings-calculator.html"
+    }
+  ],
+  "cleanUrls": true
+}

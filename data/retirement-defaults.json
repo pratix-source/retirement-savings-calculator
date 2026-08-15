@@ -1,0 +1,9 @@
+{
+  "currentAge": 35,
+  "retirementAge": 65,
+  "currentSavings": 25000,
+  "monthlyContribution": 500,
+  "annualReturn": 6,
+  "inflation": 2.5,
+  "targetIncome": 2500
+}
