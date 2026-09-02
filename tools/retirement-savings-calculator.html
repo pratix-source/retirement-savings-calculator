@@ -246,12 +246,20 @@ body:has(nav.nav):not(.light) footer {
 }
 
 </style>
+<style id="retirement-navigation-fix">
+.hero-side { display:flex; flex-direction:column; align-items:flex-end; gap:10px; flex-shrink:0; }
+.home-link { display:inline-flex; align-items:center; gap:6px; color:#fff; font-size:13px; font-weight:800; text-decoration:none; border:1px solid rgba(255,255,255,.35); border-radius:12px; padding:8px 11px; background:rgba(255,255,255,.12); }
+.home-link:hover { background:rgba(255,255,255,.2); }
+select.lang { color:#0f172a !important; background:#fff !important; border-color:#cbd5e1 !important; min-width:128px; }
+select.lang option { color:#0f172a !important; background:#fff; }
+@media(max-width:900px){ .hero-side { align-items:flex-start; margin-top:16px; } .lang { margin-top:0; } }
+</style>
 </head>
 <body>
 <div class="wrap">
   <section class="hero">
     <div><h1 data-i18n="title">Retirement Savings Calculator</h1><p data-i18n="subtitle">Estimate your retirement balance, inflation-adjusted value and savings gap.</p></div>
-    <select id="lang" class="lang" aria-label="Language"><option value="en">English</option><option value="tr">Türkçe</option><option value="de">Deutsch</option><option value="fr">Français</option><option value="es">Español</option><option value="it">Italiano</option><option value="nl">Nederlands</option><option value="sv">Svenska</option><option value="da">Dansk</option><option value="no">Norsk</option><option value="fi">Suomi</option><option value="zh">中文</option></select>
+    <div class="hero-side"><a class="home-link" href="https://pratix.io/" aria-label="Back to Pratix.io">← Pratix.io</a><select id="lang" class="lang" aria-label="Language"><option value="en">English</option><option value="tr">Türkçe</option><option value="de">Deutsch</option><option value="fr">Français</option><option value="es">Español</option><option value="it">Italiano</option><option value="nl">Nederlands</option><option value="sv">Svenska</option><option value="da">Dansk</option><option value="no">Norsk</option><option value="fi">Suomi</option><option value="zh">中文</option></select></div>
   </section>
   <main class="grid">
     <section class="card formCard"><h2 data-i18n="inputs">Inputs</h2><div id="err" class="msg"></div><form id="form" class="form">
