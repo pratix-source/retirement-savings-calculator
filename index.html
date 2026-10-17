@@ -9,7 +9,16 @@
       const target = 'tools/retirement-savings-calculator.html' + window.location.search + window.location.hash;
       window.location.replace(target);
     </script>
-  </head>
+
+    <!-- Pratix GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C3351LV3ZF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-C3351LV3ZF');
+    </script>
+</head>
   <body>
     <p>Retirement Savings Calculator yükleniyor… <a href="tools/retirement-savings-calculator.html">Uygulamayı aç</a></p>
   </body>
